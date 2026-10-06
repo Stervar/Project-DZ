@@ -3,15 +3,15 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	system("chcp 1251");
 	float num1, num2;
-	std::cout << "Ââåäèòå äâà çíà÷åíèÿ (Åñëè îíè äðîáíû òî èñïîëüçóéòå òî÷êè) "; std::cin >> num1 >> num2;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð²Ð° Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ (Ð•ÑÐ»Ð¸ Ð¾Ð½Ð¸ Ð´Ñ€Ð¾Ð±Ð½Ñ‹ Ñ‚Ð¾ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ñ‚Ð¾Ñ‡ÐºÐ¸) "; std::cin >> num1 >> num2;
 	float modul1 = (num1 < 0) ? -num1 : num1;
-	{ std::cout << "Âûâîä ïåðâîãî " << modul1 << "\n"; }
+	{ std::cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ " << modul1 << "\n"; }
 	float modul2 = (num2 < 0) ? -num2 : num2;
-	{ std::cout << "Âûâîä âòîðîãî ÷èñëà  " << modul2 << "\n"; }
+	{ std::cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ð²Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð°  " << modul2 << "\n"; }
 	float summ = (num1 + num2);
-	std::cout << "Âûâîä Ìîäóëü ñóììû " << summ << "\n";
+	std::cout << "Ð’Ñ‹Ð²Ð¾Ð´ ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑÑƒÐ¼Ð¼Ñ‹ " << summ << "\n";
 	float summ_modul = (modul1 + modul2);
-	std::cout << "Âûâîä ñóììû ìîäóëåé ýòèõ ÷èñåë  " << summ_modul << "\n";
+	std::cout << "Ð’Ñ‹Ð²Ð¾Ð´ ÑÑƒÐ¼Ð¼Ñ‹ Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹ ÑÑ‚Ð¸Ñ… Ñ‡Ð¸ÑÐµÐ»  " << summ_modul << "\n";
 	return 0;
 
 }
