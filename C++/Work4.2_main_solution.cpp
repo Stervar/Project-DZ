@@ -13,3 +13,5 @@ int main() {
 		std::cout << word.front() << "\n";
 	}
 	std::cout << "\n\n";
+
+	
