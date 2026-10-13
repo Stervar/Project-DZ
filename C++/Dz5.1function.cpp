@@ -1,0 +1,48 @@
+// 1. Напишите функцию умножения двух чисел (результат вывести на экран)
+// 2. Напишите функцию, выводящую сообщение на экран
+// 3. Напишите функцию, запускающую цикл от -19 до 24 и выводящую числа
+// между ними
+
+
+
+#include <iostream>
+#include <windows.h>
+using namespace std; 
+
+
+        void textT( ){
+        SetConsoleOutputCP(65001);
+        std::cout << "Задание 2\n"; 
+        std::cout <<"⣿⣿⢱⣶⣭⡻⢿⠿⣛⣛⣛⠸⣮⡻⣿⣿⡿⢛⣭⣶⣆⢿⣿"<< std::endl;  
+        std::cout <<"⣿⡿⣸⣿⣿⣿⣷⣮⣭⣛⣿⣿⣿⣿⣶⣥⣾⣿⣿⣿⡷⣽⣿"<< std::endl;  
+        std::cout <<"⣿⡏⣾⣿⣿⡿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿"<< std::endl;  
+        std::cout <<"⣿⣧⢻⣿⡟⣰⡿⠁⢹⣿⣿⣿⣋⣴⠖⢶⣝⢻⣿⣿⡇⣿⣿"<< std::endl;  
+        std::cout <<"⠩⣥⣿⣿⣴⣿⣇⠀⣸⣿⣿⣿⣿⣷⠀⢰⣿⠇⣿⣭⣼⠍⣿"<< std::endl;  
+        std::cout <<"⣿⡖⣽⣿⣿⣿⣿⣿⣿⣯⣭⣭⣿⣿⣷⣿⣿⣿⣿⣿⡔⣾⣿"<< std::endl;  
+        std::cout <<"⣿⡡⢟⡛⠻⠿⣿⣿⣿⣝⣨⣝⣡⣿⣿⡿⠿⠿⢟⣛⣫⣼⣿"<< std::endl;  
+        std::cout <<"⣿⣿⣿⡷⠝⢿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣾⡩⣼⣿⣿⣿⣿⣿"<< std::endl;  
+        std::cout <<"⣿⣿⣯⡔⢛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣭⣍⣨⠿⢿⣿⣿⣿"<< std::endl;  
+        std::cout <<"⣿⡿⢫⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣝⣿"<< std::endl;  
+        }    
+        
+        int muSumm( int sum1 , int  sum2) {
+            return sum1 * sum2;
+        }
+        int main (){
+        SetConsoleCP(65001);
+        SetConsoleOutputCP(65001);
+        std::cout << "Введите  два числа (а я уже их умножу) "<< std::endl;  
+        
+        int num1, num2;
+        std::cin >> num1 >> num2;
+
+
+        int  multiplication = muSumm(num1 , num2 ) ;
+        std::cout<< "Прошу твой ответ: " << multiplication << std::endl;   
+        textT();
+        return 0 ;
+        }
+
+
+
+

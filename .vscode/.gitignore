@@ -5,3 +5,13 @@
 *.ilk
 *.olk
 build/
+
+
+
+# git rm --cached *.exe
+# git rm --cached *.obj
+# git rm --cached *.pdb
+# git rm --cached *.ilk
+
+# git commit -m "Убран мусор компиляции"
+# git push
