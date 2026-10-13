@@ -1,5 +1,26 @@
 {
+    "version": "2.0.0",
     "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: cl.exe активный файл",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "if (!(Test-Path '${fileDirname}\\build')) { New-Item -ItemType Directory -Path '${fileDirname}\\build' }; cl.exe /Zi /EHsc /nologo /Fo:'${fileDirname}\\build\\' /Fd:'${fileDirname}\\build\\' /Fe:'${fileDirname}\\build\\${fileBasenameNoExtension}.exe' '${file}'"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Умный сборщик: автоматически создает build и складывает мусор туда"
+        },
         {
             "type": "cppbuild",
             "label": "C/C++: cl.exe сборка активного файла",
@@ -23,6 +44,5 @@
             },
             "detail": "Задача создана отладчиком."
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
