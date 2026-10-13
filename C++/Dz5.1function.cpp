@@ -4,7 +4,7 @@
 // между ними
 
 
-
+//Запускать код нужно в КОДИРОВКЕ UTF-8 а то по другому не работает :(
 #include <iostream>
 #include <windows.h>
 using namespace std; 
@@ -27,10 +27,22 @@ using namespace std;
         
         int muSumm( int sum1 , int  sum2) {
             return sum1 * sum2;
-        }
+        }      
+        int muCikl(){
+        std::cout << "\nЗадание 3" << std::endl;  
+        std::cout << "Цикл от -19 до 24:" << std::endl; 
+
+        int start = -19 , end = 24;
+        for  (int i  = start ; i <= end; i++) {std::cout  <<  i  << " ";  }
+            std::cout << std::endl; 
+            return 0; 
+} 
+
+
         int main (){
         SetConsoleCP(65001);
-        SetConsoleOutputCP(65001);
+        SetConsoleOutputCP(65001); 
+        std::cout << "Задание 1\n "<< std::endl;  
         std::cout << "Введите  два числа (а я уже их умножу) "<< std::endl;  
         
         int num1, num2;
@@ -39,7 +51,10 @@ using namespace std;
 
         int  multiplication = muSumm(num1 , num2 ) ;
         std::cout<< "Прошу твой ответ: " << multiplication << std::endl;   
+
+
         textT();
+        muCikl();
         return 0 ;
         }
 
