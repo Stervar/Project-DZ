@@ -2,7 +2,7 @@
 int main() {
 	system("chcp 1251");
 	int num1;
-	std::cout << "\nÂâåäèòå ñêîëüêî ğàç õîòèòå ïîâòîğèòü ñëîâî Hello world\n"; std::cin >> num1;
+	std::cout << "\nĞ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑĞºĞ¾Ğ»ÑŒĞºĞ¾ Ñ€Ğ°Ğ· Ñ…Ğ¾Ñ‚Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€Ğ¸Ñ‚ÑŒ ÑĞ»Ğ¾Ğ²Ğ¾ Hello world\n"; std::cin >> num1;
 	for (int i = 0; i < num1; i++) {
 		std::cout <<". Hello, World!\n";
 	}
