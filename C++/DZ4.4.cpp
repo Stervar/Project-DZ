@@ -20,3 +20,4 @@ int main() {
 	std::cout << "Сумма: " << summ << '\n';
 	return 0;
 }
+
