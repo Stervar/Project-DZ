@@ -1,0 +1,24 @@
+#include <iostream>
+#include <windows.h>
+#include <cmath>
+using namespace std;
+
+int main() {
+	SetConsoleCP(65001);
+	SetConsoleOutputCP(65001);
+
+	int num;
+	cout << "Введите число пж: ";
+	cin >> num;
+
+	int modul_num = abs(num);
+
+	if (modul_num >= 100000 && modul_num <= 999999) {
+		cout << "Да, число шестизначное молодец бро: " << endl;
+	}
+	else {
+		cout << "Нет, число не шестизначное молодец бро: " << endl;
+	}
+
+	return 0;
+}
