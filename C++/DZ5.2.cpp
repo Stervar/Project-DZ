@@ -10,7 +10,7 @@
 //● Функция должна возвращать значение
 
 #include <iostream>
-//#include <windows.h>
+#include <windows.h>
 #include <cmath>
 
 using namespace std;
@@ -20,8 +20,8 @@ double AbsoluteNum(double number) {
 }
 
 int main() {
-    //SetConsoleCP(65001);
-    //SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
 
     double num1 = 0, num2 = 0;
 
