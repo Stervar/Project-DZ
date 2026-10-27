@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-void myNum(double num ; int exponent);
+void myNum(double num ,int exponent);
 
 int main(){
     SetConsoleCP(65001);
@@ -14,7 +14,7 @@ int main(){
 
     cout << "Введи число(я его возведу в степень): " << endl;
     cin >> num;
-    cout << "Введите степень для числа: " << enbl;
+    cout << "Введите степень для числа: " << endl;
     cin >> exponent;
     
     myNum(num , exponent);
