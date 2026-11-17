@@ -17,11 +17,11 @@ int main() {
     SetConsoleOutputCP(65001);
     
     int limit;
-    cout << "Введите целое число: ";
+    cout << "Введите целое число:  ";
     cin >> limit;
 
     if (limit < 0) {
-        cout << "Ошибка: число должно быть больше или равно 0." << endl;
+        cout << "Ошибка: число должно быть больше или равно 0. " << endl;
         return 1;
     }
 
